@@ -1,0 +1,145 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cafe Universitario</title>
+      <link rel="stylesheet" href="css/styles.css"> 
+  </head>
+  <body>
+
+      <!--Menu-->
+      <header>
+      <nav>
+      <h2>Cafe Universitario</h2>
+      <img src="img/cafe.png" alt="logo cafe" class="logo-cafe" height="100">
+      <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      </nav>
+      </header>
+
+
+  <main>
+
+      <!-- HERO --> 
+        <section id="inicio" class="hero"> 
+        <img src="img/banner.png" alt="Banner de Café Universitario" class="hero-fondo"> 
+        <a href="#productos" class="enlace-menu" aria-label="Ir a la sección de productos"> </a> 
+        </section>
+
+  <!-- nosotros -->
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre nosotros</h2>
+
+      <section class="cards">
+      <div class="card">
+        <h3>Café Universitario</h3>
+        <p>Es un emprendimiento local dedicado a ofrecer café, pastelería y productos artesanales de calidad.</p>
+      </div>
+
+      <div class="card">
+        <h3>Nuestro Objetivo</h3>
+        <p>Es brindar un espacio agradable para estudiantes, docentes y vecinos, con atención cercana y precios accesibles.</p>
+      </div>
+
+      <div class="card">
+        <h3>Calidad Artesanal</h3>
+        <p>Preparamos nuestros productos con ingredientes seleccionados para entregar un sabor fresco y de calidad.</p>
+      </div>
+      </section>
+  </section>
+
+  <!-- PRODUCTOS --> 
+  <section id="productos" class="productos"> 
+    <h2>Nuestros productos</h2> 
+    <div class="cards"> 
+      <article class="card producto"> 
+
+        <img src="img/late.jpg" alt="Taza de café latte"> 
+        <h3>Café Latte</h3> 
+        <p> Suave mezcla de café espresso con leche vaporizada. </p> 
+        <strong>$2.500</strong>  
+
+      </article> 
+      <article class="card producto"> 
+
+          <img src="img/muffin.jpeg" alt="Muffin de arándanos"> 
+          <h3>Muffin de arándanos</h3> 
+          <p> Muffin esponjoso preparado con arándanos frescos. </p> 
+          <strong>$1.800</strong> 
+
+        </article> 
+        <article class="card producto"> 
+
+            <img src="img/torta.png" alt="Porción de torta de chocolate"> 
+            <h3>Torta de chocolate</h3> 
+            <p> Deliciosa porción de torta preparada con chocolate y cacao. </p> 
+            <strong>$2.900</strong> 
+
+          </article> 
+
+          <article class="card producto"> 
+
+            <img src="img/berlin.jpg" alt="Berlin relleno de crema pastelera"> 
+            <h3>Berlin relleno</h3> 
+            <p> Deliciosa porción de berlin relleno con crema pastelera. </p> 
+            <strong>$2.500</strong> 
+
+          </article> 
+        </div> 
+      </section>
+
+      
+<!-- SOLICITUD DE INFORMACIÓN --> 
+ <section id="contacto" class="contacto"> 
+  <h2>Solicitud de Información</h2> 
+  <form id="formulario-solicitud"> 
+    <label for="nombre">Nombre completo</label> 
+    <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required > 
+    <label for="correo">Correo electrónico</label> 
+    <input type="email" id="correo" placeholder="Ingrese su correo" required > 
+    <label for="telefono">Teléfono</label> 
+    <input type="tel" id="telefono" placeholder="+56 9 1234 5678" required > 
+    <label for="producto">Producto de interés</label> 
+    <select id="producto" required> 
+      <option value="">Seleccione un producto</option> 
+      <option value="Café Latte">Café Latte</option> 
+      <option value="Muffin de arándanos">Muffin de arándanos</option> 
+      <option value="Torta de chocolate">Torta de chocolate</option> 
+      <option value="Berlín relleno">Berlín relleno</option> 
+    </select> 
+    <label for="comentario">Comentario o consulta</label> 
+    <textarea id="comentario" placeholder="Escriba su consulta" required ></textarea> 
+    <button type="submit">Enviar solicitud</button> 
+  </form> 
+</section> <!-- SOLICITUDES REGISTRADAS --> 
+<section id="solicitudes" class="solicitudes"> 
+  <h2>Solicitudes Registradas</h2> 
+  <div class="tabla-contenedor"> 
+    <table> 
+      <thead> 
+        <tr> 
+          <th>Nombre</th> 
+          <th>Producto</th> 
+          <th>Correo electrónico</th> 
+        </tr> 
+      </thead> 
+      <tbody id="lista-solicitudes"> <!-- Los registros aparecerán aquí --> </tbody> 
+    </table> 
+  </div> 
+</section>
+  </main>
+
+      <!--Pie de pagina-->
+  <footer>
+    <p>Contacto: contacto@cafeuniversitario.cl</p>
+    <p>2026 Café Universitario. Todos los derechos reservados.</p>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
