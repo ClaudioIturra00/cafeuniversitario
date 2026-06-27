@@ -1,0 +1,358 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffaf4;
+  color: #3b2416;
+  font-family: Arial, sans-serif;
+}
+
+/* LOGO */
+.logo-cafe {
+  margin-left: 160px;
+}
+
+/* MENÚ */
+nav {
+  background: #fffaf4;
+  color: #3b2416;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+nav h2 {
+  font-size: 28px;
+  color: #6f4e37;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #3b2416;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c68b59;
+}
+
+/* HERO CON IMAGEN */
+.hero {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+/* IMAGEN DEL FONDO */
+.hero-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* CAPA OSCURA */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(45, 25, 15, 0.35);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ZONA CLICKEABLE SOBRE “EXPLORAR MENÚ” */
+.enlace-menu {
+  position: absolute;
+  display: block;
+  z-index: 4;
+
+  left: 18%;
+  bottom: 8%;
+
+  width: 230px;
+  height: 60px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* TÍTULOS DE SECCIONES */
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #3b2416;
+}
+
+/* SOBRE NOSOTROS */
+.nosotros {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f7f1e8;
+}
+
+/* PRODUCTOS */
+.productos {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fffaf4;
+}
+
+/* TARJETAS */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  width: 260px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(59, 36, 22, 0.2);
+  transition: 0.3s;
+}
+
+.card h3 {
+  color: #6f4e37;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #4a3628;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #ead8c0;
+}
+
+/* IMÁGENES DE PRODUCTOS */
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.producto strong {
+  display: block;
+  color: #8b5e3c;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* FORMULARIO */
+.contacto {
+  padding: 60px 20px;
+  background: #f7f1e8;
+}
+
+section form {
+  background: #ead8c0;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(59, 36, 22, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  text-align: left;
+  font-weight: bold;
+  color: #3b2416;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8b5e3c;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #3b2416;
+}
+
+/* SOLICITUDES REGISTRADAS */
+.solicitudes {
+  padding: 60px 20px;
+  background: #fffaf4;
+}
+
+.tabla-contenedor {
+  max-width: 900px;
+  margin: auto;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(59, 36, 22, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: #6f4e37;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #d8c5b2;
+}
+
+tbody tr:hover {
+  background: #f7f1e8;
+}
+
+/* FOOTER */
+footer {
+  background: #3b2416;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+/* TARJETAS DE PRODUCTOS */
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.producto strong {
+  display: block;
+  color: #8b5e3c;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .logo-cafe {
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .enlace-menu {
+    left: 17%;
+    bottom: 8%;
+    width: 150px;
+    height: 45px;
+  }
+
+  section h2 {
+    font-size: 29px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+    max-width: 350px;
+  }
+
+  section form {
+    width: 90%;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
